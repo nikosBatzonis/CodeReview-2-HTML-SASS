@@ -1,0 +1,318 @@
+* 
+    box-sizing: border-box
+
+$color-black: rgb(14,13,13)
+$color-white: white   
+
+// @extend
+.flex
+    display: flex
+
+.grid
+    display: grid
+
+.white
+    color: white    
+
+.black
+    background-color: rgb(14,13,13)
+
+.wh
+    width: 100%
+
+.grid-img
+    grid-template-columns: 31% 31% 31% 
+    grid-gap: 50px 46px
+    margin-top: 30px 
+
+    @media only screen and (max-width: 1440px) 
+        grid-gap: 50px 45px
+
+    @media only screen and (max-width: 1024px) 
+        grid-gap: 50px 32px
+
+    @media only screen and (max-width: 768px) 
+        grid-gap: 50px 24px
+
+    @media only screen and (max-width: 480px)
+        grid-template-columns: 100%
+
+a
+    color: white
+    text-decoration-line: none 
+
+// 
+
+body
+    width: 100vw
+    height: 100vh
+    margin: 0 auto
+    padding: 0 
+    font-family: Arial, Helvetica, sans-serif
+
+// nav header footer  
+
+.navbar-header
+    @extend a
+    font-size: 1.5em
+    height: 50px
+    @extend .flex 
+    @extend .black
+    margin-top: -1px
+    align-items: center
+    padding-left: 40px
+
+    @media only screen and (max-width: 768px)
+        font-size: 20px
+
+    @media only screen and (max-width: 480px)
+        font-size: 18px
+        justify-content: center
+        padding-left: 0
+        
+.navbar-header > a
+    margin-right: 20px
+
+.navbar-footer
+    @extend a
+    @extend .flex 
+    justify-content: space-between 
+    padding: 15px 60px 0 80px
+    align-items: center
+
+    @media only screen and (max-width: 480px)
+        flex-direction: column-reverse
+              
+.a-footer > a
+    font-size: 15px
+    margin-left: 10px
+
+    @media only screen and (max-width: 480px)
+        font-size: 18px
+        margin-left: 12px
+
+    @media only screen and (max-width: 375px)
+        margin-left: 8px
+
+    @media only screen and (max-width: 320px)
+        font-size: 14px
+        margin-left: 5px
+        
+.a-footer    
+    @media only screen and (max-width: 480px)
+        padding-top: 20px
+        margin-left: 0
+             
+// containers
+
+.container-one 
+    background-color: rgb(91,25,26)
+    justify-content: space-between
+    padding: 50px 40px 50px 50px   
+
+    @media only screen and (max-width: 480px)
+        flex-direction: column
+        padding-bottom: 0px
+        padding-top: 40px
+
+.container-three 
+    @extend .grid
+
+.container-five 
+    @extend .grid
+    @extend .grid-img
+
+.container-six   
+    width: 80% 
+    margin: 30px 0 30px 0 
+    display: block 
+
+    @media only screen and (max-width: 480px)
+        margin: 0
+        display: none
+
+.container-seven 
+    @extend .grid
+    grid-template-columns: 45% 45% 
+    grid-gap: 10px 80px
+    margin-left: 10%
+    margin-bottom: 20px
+
+    @media only screen and (max-width: 480px)
+        margin: 0
+
+    @media screen and (max-width: 1024px)
+        grid-gap: 10px 50px
+
+    @media only screen and (max-width: 480px)
+        grid-template-columns: 100%
+
+.container-tech
+    margin-top: 60px
+    text-align: center
+    height: 650px
+    @extend .grid
+    grid-template-columns: 33% 33% 33%
+    grid-template-rows: 40%
+    grid-row-gap: 60px
+
+    @media screen and (max-width: 1024px)
+        grid-row-gap: 60px
+        margin-top: 20px
+        height: 480px
+              
+    @media screen and (max-width: 480px)
+        grid-template-columns: 100%
+        grid-template-rows: 15%
+        height: 100%
+        margin-bottom: 40px
+
+.free
+    height: 500px
+//header
+
+.logo-header 
+    width: 20%
+    height: 10%
+
+    @media only screen and (max-width: 768px)
+        width: 30%
+
+    @media only screen and (max-width: 480px)
+        width: 80%
+        margin-left: 5%
+
+.banner-1
+    width: 60%
+
+    @media only screen and (max-width: 480px)
+        opacity: 0
+// images
+
+.one
+    height: 200px
+
+
+h4
+    @extend .black  
+    color: $color-white
+    margin-top: -5px
+    height: 60px
+    display: flex
+    align-items: center
+    justify-content: center
+
+    @media only screen and (max-width: 768px)
+        font-size: 15px
+
+    @media only screen and (max-width: 768px)
+        font-size: 14px
+
+.com1       
+    @media screen and (max-width: 1024px)
+        text-align: center 
+
+.com2
+    text-align: center
+
+.com3
+    @media only screen and (max-width: 768px)
+        text-align: center    
+
+.com4
+    width: 80%  
+
+    @media screen and (max-width: 1024px)
+        text-align: center
+
+    @media only screen and (max-width: 480px)
+        width: 100%
+
+.elon
+    height: 77%
+
+    @media screen and (max-width: 1024px)
+        height: 70%
+
+    @media only screen and (max-width: 768px)
+        height: 65%
+
+.img-grid   
+    @extend .wh 
+
+.cfw
+    width: 100%
+    margin-left: 10%
+
+.small-img
+    width: 80%  
+    height: 350px
+
+    @media screen and (max-width: 1024px)
+        height: 300px
+
+    @media screen and (max-width: 768px)
+        height: 250px
+
+    @media only screen and (max-width: 480px)
+        width: 100%
+
+.mach
+    width: 350px
+    height: 250px  
+ 
+    @media screen and (max-width: 1024px)
+        width: 250px
+        height: 200px
+    
+    @media screen and (max-width: 768px)
+        width: 200px
+        height: 200px
+
+    @media only screen and (max-width: 480px)
+        width: 100%
+        height: 100%
+
+// footer
+
+footer
+    @extend .black  
+
+.a-footer
+    font-size: 10px
+    
+
+.name-footer
+    @extend .white
+    text-align: center
+    margin: 20px
+    height: 50px
+
+    @media only screen and (max-width: 480px)
+        font-size: 10px
+//
+
+h5
+    opacity: 0.5
+    text-align: right
+    padding-right: 40px
+
+    @media only screen and (max-width: 480px)
+        opacity: 0
+
+
+p
+    background-color: rgb(196,196,196)
+    padding: 10px 0 10px 20px
+    font-size: 18px
+    
+    @media only screen and (max-width: 480px)
+        font-size: 15px
+
+main
+    width: 90%
+    margin-left: 5%
+
+    @media only screen and (max-width: 480px)
+        width: 70%
+        margin-left: 15%

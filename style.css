@@ -274,6 +274,11 @@ body {
   }
 }
 
+.trans:hover {
+  -webkit-transition: width  500ms, border-radius 250ms ease-out;
+  transition: width  500ms, border-radius 250ms ease-out;
+}
+
 .one {
   height: 200px;
 }
@@ -457,5 +462,13 @@ main {
     width: 70%;
     margin-left: 15%;
   }
+}
+
+.articl {
+  margin-bottom: 5%;
+}
+
+.articl > h2 {
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */

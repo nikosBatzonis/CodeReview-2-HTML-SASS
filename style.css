@@ -141,8 +141,8 @@ body {
 
 @media only screen and (max-width: 320px) {
   .a-footer > a, .a-footer > .navbar-header, .a-footer > .navbar-footer {
-    font-size: 14px;
-    margin-left: 5px;
+    font-size: 10px;
+    margin-left: 0px;
   }
 }
 
@@ -272,11 +272,6 @@ body {
   .banner-1 {
     opacity: 0;
   }
-}
-
-.trans:hover {
-  -webkit-transition: width  500ms, border-radius 250ms ease-out;
-  transition: width  500ms, border-radius 250ms ease-out;
 }
 
 .one {
